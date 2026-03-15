@@ -22,21 +22,46 @@
     .site-title { font-family: 'Cinzel', serif; font-size: clamp(1rem,2.5vw,1.5rem); font-weight: 400; letter-spacing: .25em; color: var(--text-muted); text-transform: uppercase; margin-top: .3rem; }
 
     /* Logo & stamp effects */
+    .logo-wrap {
+      position: relative;
+      display: inline-block;
+      padding: 0 clamp(45px, 11vw, 80px) clamp(28px, 7vw, 50px) 0;
+      line-height: 0;
+      max-width: calc(100vw - 4rem);
+    }
+
     .dt-logo {
-      height: 90px; width: auto;
+      height: auto;
+      width: clamp(140px, 38vw, 280px);
+      max-width: 100%;
       opacity: 0.90;
       display: block;
     }
 
     .lnfa-stamp {
-      height: 140px; width: auto;
+      height: clamp(70px, 18vw, 140px);
+      width: auto;
       position: absolute;
-      bottom: -35px;
-      right: -45px;
+      bottom: 0;
+      right: 0;
       opacity: 0.92;
       transform: rotate(-8deg);
       filter: url(#stamp-grain);
       pointer-events: none;
+    }
+
+    @media (min-width: 769px) {
+      .logo-wrap {
+        padding: 0 80px 50px 0;
+        max-width: none;
+      }
+      .dt-logo {
+        width: auto;
+        height: 90px;
+      }
+      .lnfa-stamp {
+        height: 140px;
+      }
     }
 
     /* SECTION TITLE */
@@ -107,7 +132,7 @@
     <div class="header-logos">
 
       <!-- DT Logo + LNFA Stamp overlay -->
-      <div style="position:relative; display:inline-block; line-height:0;">
+      <div class="logo-wrap">
         <img src="img/DTLOGO-WHITE.png" alt="Dream Theater" class="dt-logo">
         <img src="img/lnfa-dt-stamp-png.png" alt="Lost Not Forgotten Archives stamp" class="lnfa-stamp">
       </div>
