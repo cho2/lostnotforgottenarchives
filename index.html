@@ -1,545 +1,429 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lost Not Forgotten Archives</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #c9a84c; --gold-light: #e8c96b;
+      --dark: #0a0a0f; --dark-2: #12121a; --dark-3: #1c1c28;
+      --text: #e8e0d0; --text-muted: #8a8070;
+      --border: rgba(201,168,76,0.2);
+    }
+    body { background: var(--dark); color: var(--text); font-family: 'Crimson Pro', Georgia, serif; font-size: 17px; line-height: 1.7; }
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    /* HEADER */
+    header { text-align: center; padding: 3rem 2rem 2.5rem; background: radial-gradient(ellipse at top, rgba(201,168,76,0.08) 0%, transparent 70%); border-bottom: 1px solid var(--border); }
+    .header-inner { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+    .header-logos { display: flex; align-items: center; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+    .site-title { font-family: 'Cinzel', serif; font-size: clamp(1rem,2.5vw,1.5rem); font-weight: 400; letter-spacing: .25em; color: var(--text-muted); text-transform: uppercase; margin-top: .3rem; }
 
-    <title>Lost Not Forgotten Archives</title>
-  </head>
-  <body>
+    /* Logo & stamp effects */
+    .dt-logo {
+      height: 90px; width: auto;
+      opacity: 0.90;
+      display: block;
+    }
 
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-4">Lost Not Forgotten Archives</span>
-          </a>
-        </header>
-    </div>    
+    .lnfa-stamp {
+      height: 140px; width: auto;
+      position: absolute;
+      bottom: -35px;
+      right: -45px;
+      opacity: 0.92;
+      transform: rotate(-8deg);
+      filter: url(#stamp-grain);
+      pointer-events: none;
+    }
 
-    <h6 class="display-6 text-center">Lost Not Forgotten Archives/Ytse Jam Records (Remixed, Remastered & Reissued)</h6>
+    /* SECTION TITLE */
+    .section-title { font-family: 'Cinzel', serif; font-size: clamp(.9rem,2.5vw,1.3rem); font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); text-align: center; padding: 3rem 2rem 2rem; }
+    .section-title span { display: inline-block; padding: 0 1.5rem; background: var(--dark); position: relative; }
+    .section-title::after { content: ''; display: block; width: 80%; margin: .5rem auto 0; height: 1px; background: var(--border); }
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Category</th>
-                <th scope="col">Ytse Jam Records</th>
-                <th scope="col">Lost Not Forgotten Archives</th>
-                <th scope="col">Streaming</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>THE MAJESTY DEMOS 1985-1986</td>
-                <td><span class="badge rounded-pill bg-danger">DEMO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-001/Majesty_Demos_Dream_Theater_album_-_cover_art.webp">
-                        <p>YTSEJAM-001</p>
-						<p>Ytsejam Records – YTSEJAM001 (US, 2003)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-001/LNFA-006.jpg" style="width: 300px;">
-                        <p>LNFA-006</p>
-						<p>Inside Out Music – IOMSECD 607 (EU, 2022)</p>
-						<p>Sony Music – 19439945832 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31513 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4XFRfSN2dx5mKaZwMaTad0?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>LOS ANGELES, CALIFORNIA 5/18/98</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-002/la98l.webp">
-                        <p>YTSEJAM-002</p>
-						<p>Ytsejam Records – YTSEJAM002 (US, 2003)</p>
-                    </div>
-                </td>
-                <td>n/a</td>
-                <td>n/a</td>
-            </tr>
-            <tr>
-                <td>THE MAKING OF SCENES FROM A MEMORY</td>
-                <td><span class="badge rounded-pill bg-success">STUDIO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-003/sfaml.webp">
-                        <p>YTSEJAM-003</p>
-						<p>Ytsejam Records – YTSEJAM003 (US, 2003)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-003/LNFA-021.jpg" style="width: 300px;">
-                        <p>LNFA-021</p>
-						<p>Inside Out Music – IOM684 (EU, 2023)</p>
-						<p>Sony Music – 19658827212 (EU, 2023)</p>
-						<p>Sony Records Int'l – SICP-31638 (JP, 2023)</p>
-                    </div>
-                </td>
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6SXLoEbIPfnFGSt37VStue?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>WHEN DREAM AND DAY UNITE DEMOS 1987-1989</td>
-                <td><span class="badge rounded-pill bg-danger">DEMO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-004/wdadu-lrg.webp">
-                        <p>YTSEJAM-004</p>
-						<p>Ytsejam Records – YTSEJAM004 (US, 2004)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-004/LNFA-020.jpg" style="width: 300px;">
-                        <p>LNFA-020</p>
-						<p>Inside Out Music – IOM674 (EU, 2023)</p>
-						<p>Sony Music – 19658795272 (EU, 2023)</p>
-						<p>Sony Records Int'l –  SICP-31604~5 (JP, 2023)</p>
-                    </div>
-                </td>
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0wh1M4uklCCvm57Mot63ll?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>TOKYO, JAPAN 10/28/95</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-005/tok-lrg.webp">
-                        <p>YTSEJAM-005</p>
-						<p>Ytsejam Records – YTSEJAM005 (US, 2004)</p>
-                    </div>
-                </td>
-                <td>n/a</td>
-                <td>n/a</td>
-            </tr>
-            <tr>
-                <td>MASTER OF PUPPETS</td>
-                <td><span class="badge rounded-pill bg-primary">COVER</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-006/mop-lrg.webp">
-                        <p>YTSEJAM-006</p>
-						<p>Ytsejam Records – YTSEJAM006 (US, 2004)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-006/LNFA-004.jpg" style="width: 300px;">
-                        <p>LNFA-004</p>
-						<p>Inside Out Music – IOMSECD 600 (EU, 2021)</p>
-						<p>Sony Music – 19439907772 (EU, 2021)</p>
-						<p>Sony Records Int'l –  SICP-31476 (JP, 2021)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5nbjp1UN0Z0GgE3rbRem1o?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>IMAGES AND WORDS DEMOS 1989 – 1991</td>
-                <td><span class="badge rounded-pill bg-danger">DEMO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-007/iwbig.webp">
-                        <p>YTSEJAM-007</p>
-						<p>Ytsejam Records – YTSEJAM007 (US, 2005)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-007/LNFA-013.jpg" style="width: 300px;">
-                        <p>LNFA-013</p>
-						<p>Inside Out Music – IOM649 (EU, 2022)</p>
-						<p>Sony Music – 19658728622 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31548~9 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1Vrh9xpIsVdijchDihsUV3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>THE NUMBER OF THE BEAST</td>
-                <td><span class="badge rounded-pill bg-primary">COVER</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-008/beastlg.webp">
-                        <p>YTSEJAM-008</p>
-						<p>Ytsejam Records – YTSEJAM008 (US, 2005)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-008/LNFA-011.jpg" style="width: 300px;">
-                        <p>LNFA-011</p>
-						<p>Inside Out Music – IOM640 (EU, 2022)</p>
-						<p>Sony Music – 19658709502 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31537 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4mwLdqpkW0YWZwUqD1k4yV?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>WHEN DREAM AND DAY REUNITE</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-009/dreamlg.webp">
-                        <p>YTSEJAM-009</p>
-						<p>Ytsejam Records – YTSEJAM009 (US, 2005)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-009/LNFA-005.jpg" style="width: 300px;">
-                        <p>LNFA-005</p>
-						<p>Inside Out Music – IOMSECD 605 (EU, 2021)</p>
-						<p>Sony Music – 19439926402 (EU, 2021)</p>
-						<p>Sony Records Int'l – SICP-31509 (JP, 2021)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0bLsrKNbCEqvcH2s30u46h?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>AWAKE DEMOS</td>
-                <td><span class="badge rounded-pill bg-danger">DEMO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-010/awakelrg.webp">
-                        <p>YTSEJAM-010</p>
-						<p>Ytsejam Records – YTSEJAM010 (US, 2006)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-010/LNFA-007.jpg" style="width: 300px;">
-                        <p>LNFA-007</p>
-						<p>Inside Out Music – IOMSECD 615 (EU, 2022)</p>
-						<p>Sony Music – 19439983402 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31517 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4fgXwj3gPleU0NQeuYQJrK?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>OLD BRIDGE, NEW JERSEY – 12/14/96</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-011/oblrg.webp">
-                        <p>YTSEJAM-011</p>
-						<p>Ytsejam Records – YTSEJAM011 (US, 2006)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-011/LNFA-008.jpg" style="width: 300px;">
-                        <p>LNFA-008</p>
-						<p>Inside Out Music – IOM655 (EU, 2022)</p>
-						<p>Sony Music – 19658743322 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31565~6 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3sL8Vr9EE1kyUzj1lcolWr?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>DARK SIDE OF THE MOON</td>
-                <td><span class="badge rounded-pill bg-primary">COVER</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-012/dsotmlrg.webp">
-                        <p>YTSEJAM-012</p>
-						<p>Ytsejam Records – YTSEJAM012 (US, 2006)</p>
-                    </div>
-                </td>
-                <td>n/a</td>
-                <td>n/a</td>
-            </tr>            
-            <tr>
-                <td>NEW YORK CITY 3/4/93</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-013/nycl.webp">
-                        <p>YTSEJAM-013</p>
-						<p>Ytsejam Records – YTSEJAM013 (US, 2007)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-013/LNFA-015.jpg" style="width: 300px;">
-                        <p>LNFA-015</p>
-						<p>Inside Out Music – IOMSECD 619 (EU, 2022)</p>
-						<p>Sony Music – 19439989512 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31522-3 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/02Y334D78pAitL6f5nxgxE?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>FALLING INTO INFINITY DEMOS</td>
-                <td><span class="badge rounded-pill bg-danger">DEMO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-014/iwdl.webp">
-                        <p>YTSEJAM-014</p>
-						<p>Ytsejam Records – YTSEJAM014 (US, 2007)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-014/LNFA-010.jpg" style="width: 300px;">
-                        <p>LNFA-010</p>
-						<p>Inside Out Music – IOM636 (EU, 2022)</p>
-						<p>Sony Music – 19658705512 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31527~8 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2sGvPBY4W7KEJDmgb2eKhc?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>MADE IN JAPAN</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-015/midl.webp">
-                        <p>YTSEJAM-015</p>
-						<p>Ytsejam Records – YTSEJAM015 (US, 2007)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-015/LNFA-014.jpg" style="width: 300px;">
-                        <p>LNFA-014</p>
-						<p>Inside Out Music – IOM650 (EU, 2022)</p>
-						<p>Sony Music – 19658724532 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31556 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6Euf0WhtR2Y1oKMD6BqtWG?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>THE MAKING OF FALLING INTO INFINITY</td>
-                <td><span class="badge rounded-pill bg-success">STUDIO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-016/mfii-lg.webp">
-                        <p>YTSEJAM-016</p>
-						<p>Ytsejam Records – YTSEJAM016 (US, 2009)</p>
-					</div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-016/LNFA-019.jpg" style="width: 300px;">
-                        <p>LNFA-019</p>
-						<p>Inside Out Music – IOM668 (EU, 2023)</p>
-						<p>Sony Music – 19658783302 (EU, 2023)</p>
-						<p>Sony Records Int'l – SICP-31602 (JP, 2023)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6PSF6V0b6eMbuBI8lBMahX?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>TRAIN OF THOUGHT INSTRUMENTAL DEMOS 2003</td>
-                <td><span class="badge rounded-pill bg-danger">DEMO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-017/toti-lg.webp">
-                        <p>YTSEJAM-017</p>
-						<p>Ytsejam Records – YTSEJAM017 (US, 2009)</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-017/LNFA-003.jpg" style="width: 300px;">
-                        <p>LNFA-003</p>
-						<p>Inside Out Music – IOMLTDCD 595 (EU, 2021)</p>
-						<p>Sony Music – 19439888472 (EU, 2021)</p>
-						<p>Sony Records Int'l – SICP-31474 (JP, 2021)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2K6lH61luw30zLa0Wh8isc?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>UNCOVERED 2003-2005</td>
-                <td><span class="badge rounded-pill bg-primary">COVER</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/YTSEJAM-018/Uncovered-lg.webp">
-                        <p>YTSEJAM-018</p>
-						<p>Ytsejam Records – YTSEJAM018 (US, 2009)</p>
-                    </div>
-                </td>
-                <td>n/a</td>
-                <td>n/a</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <h6 class="display-6 text-center">Lost Not Forgotten Archives New Release (Previously Unreleased)</h6>
-    
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Category</th>
-                <th scope="col">Lost Not Forgotten Archives</th>
-                <th scope="col">Streaming</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>IMAGES AND WORDS - LIVE IN JAPAN 2017</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-001/LNFA-001.jpg" style="width: 300px;">
-                        <p>LNFA-001</p>
-						<p>Inside Out Music – IOMLTDCD 590 (EU, 2021)</p>
-						<p>Sony Music – 19439862982 (EU, 2021)</p>
-						<p>Sony Records Int'l – SICP-31439 (JP, 2021)</p>
-                    </div>
-                </td>   
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5vG3r0Cdc05CnJMO5VQe5B?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>A DRAMATIC TOUR OF EVENTS - SELECT BOARD MIXES</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-002/LNFA-002.jpg" style="width: 300px;">
-                        <p>LNFA-002</p>
-						<p>Inside Out Music – IOMLTDCD 592 (EU, 2021)</p>
-						<p>Sony Music – 19439881932 (EU, 2021)</p>
-						<p>Sony Records Int'l – SICP-31443~4 (JP, 2021)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1DQlnLP9i9XfOqRsxnTM9T?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>...AND BEYOND - LIVE IN JAPAN 2017</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-009/LNFA-009.jpg" style="width: 300px;">
-                        <p>LNFA-009</p>
-						<p>Inside Out Music – IOMSECD 623 (EU, 2022)</p>
-						<p>Sony Music – 19439994152 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31524 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3uIx4pdT3EB6ecuP8CbnJO?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>LIVE IN BERLIN 2019</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-012/LNFA-012.jpg" style="width: 300px;">
-                        <p>LNFA-012</p>
-						<p>Inside Out Music – IOM646 (EU, 2022)</p>
-						<p>Sony Music – 19658719832 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31542~3 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/74Wn2DIhVl6RlGHCAvrh21?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>LIVE IN WACKEN</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-016/LNFA-016.jpg" style="width: 300px;">
-                        <p>LNFA-016</p>
-						<p>Inside Out Music – IOM661 (EU, 2022)</p>
-						<p>Sony Music – 19658756202 (EU, 2022)</p>
-						<p>Sony Records Int'l – SICP-31577 (JP, 2022)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/55NleCFUH8QxQlpcE2dIyW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>LIVE AT MADISON SQUARE GARDEN</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-017/LNFA-017.jpg" style="width: 300px;">
-                        <p>LNFA-017</p>
-						<p>Inside Out Music – IOM664 (EU, 2023)</p>
-						<p>Sony Music – 19658756282 (EU, 2023)</p>
-						<p>Sony Records Int'l – SICP-31580 (JP, 2023)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0EkG0h7OgydTtd330AKCyU?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>DISTANCE OVER TIME DEMOS</td>
-                <td><span class="badge rounded-pill bg-danger">DEMO</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-018/LNFA-018.jpg" style="width: 300px;">
-                        <p>LNFA-018</p>
-						<p>Inside Out Music – IOM666 (EU, 2023)</p>
-						<p>Sony Music – 19658770672 (EU, 2023)</p>
-						<p>Sony Records Int'l – SICP-31599 (JP, 2023)</p>
-                    </div>
-                </td>    
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3813UgywzpXjMYQiWyb859?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-            <tr>
-                <td>LIVE IN TOKYO 2010</td>
-                <td><span class="badge rounded-pill bg-warning text-dark">LIVE</span></td>
-                <td>
-                    <div class="text-center">
-                        <img class="img-fluid rounded" src="img/LNFA-022/LNFA-022.jpg" style="width: 300px;">
-                        <p>LNFA-022</p>
-						<p>Inside Out Music – IOM766 (EU, 2026)</p>
-						<p>Sony Music – 19958408822 (EU, 2026)</p>
-						<p>Sony Records Int'l – SICP-31844 (JP, 2026)</p>
-                    </div>
-                </td>
-                <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2rg2G2ES20fSBBrXquoEUI?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            </tr>
-        </tbody>
-    </table>
+    /* GRID */
+    .releases-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 1.5px; background: var(--border); padding-bottom: 3rem; }
 
-    <figure class="text-center">
-        <blockquote class="blockquote">
-          <p>Source:</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          <a href="https://dreamtheater.net/lnfa/" target="_blank">https://dreamtheater.net/lnfa</a>
-        </figcaption>
-        <figcaption class="blockquote-footer">
-            <a href="https://dreamtheater.club/" target="_blank">https://dreamtheater.club</a>
-          </figcaption>  
-        <figcaption class="blockquote-footer">
-            <a href="https://www.discogs.com/artist/260935-Dream-Theater" target="_blank">Discogs</a>
-        </figcaption>  
-    </figure>
+    /* CARD */
+    .card { background: var(--dark-2); padding: 1.8rem 1.5rem 1.5rem; display: flex; flex-direction: column; gap: 1rem; position: relative; transition: background .3s; }
+    .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: transparent; transition: background .3s; }
+    .card:hover { background: var(--dark-3); }
+    .card:hover::before { background: var(--gold); }
 
-    <footer class="text-center">
-        <a href="https://open.spotify.com/playlist/4sibkBtkuuX7oIQ3G2zZIn?si=4794d1905f7949ff" target="_blank">Lost Not Forgotten Archives Spotify Playlist</a>
-    </footer>
-    
-    <br>
-    
-    <!-- Optional JavaScript; choose one of the two! -->
+    /* BADGE */
+    .badge { display: inline-block; font-family: 'Cinzel', serif; font-size: .6rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; padding: .25em .8em; border-radius: 2px; align-self: flex-start; }
+    .demo   { background: rgba(201,76,76,.15);  color: #f08080; border: 1px solid rgba(201,76,76,.35); }
+    .live   { background: rgba(201,168,76,.12); color: var(--gold-light); border: 1px solid rgba(201,168,76,.3); }
+    .studio { background: rgba(76,156,106,.12); color: #80d4a0; border: 1px solid rgba(76,156,106,.3); }
+    .cover  { background: rgba(76,124,201,.12); color: #80a8f0; border: 1px solid rgba(76,124,201,.3); }
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    .card-title { font-family: 'Cinzel', serif; font-size: .88rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--text); line-height: 1.4; }
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
+    /* RELEASES ROW */
+    .releases-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .release-item { flex: 1; min-width: 110px; display: flex; flex-direction: column; align-items: center; gap: .4rem; }
+    .release-item img { width: 100%; max-width: 140px; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--border); transition: border-color .3s, transform .3s; cursor: zoom-in; }
+    .card:hover .release-item img { border-color: var(--gold); transform: scale(1.02); }
+    .release-label { font-family: 'Cinzel', serif; font-size: .62rem; letter-spacing: .1em; color: var(--gold); text-transform: uppercase; text-align: center; }
+    .release-sub { font-size: .7rem; color: var(--text-muted); text-align: center; line-height: 1.6; }
+    .na-tag { font-size: .8rem; color: var(--text-muted); font-style: italic; padding: .5rem 0; }
+
+    /* SPOTIFY */
+    .spotify-wrap { border-radius: 8px; overflow: hidden; background: #000; }
+    .spotify-wrap iframe { width: 100%; height: 80px; border: none; display: block; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; }
+    .footer-label { font-family: 'Cinzel', serif; font-size: .65rem; letter-spacing: .15em; text-transform: uppercase; color: var(--text-muted); opacity: .5; margin-bottom: .8rem; }
+    .footer-sources { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 2rem; margin-bottom: 1.5rem; }
+    .footer-playlist { display: flex; justify-content: center; }
+    footer a { font-family: 'Cinzel', serif; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; transition: color .2s; }
+    footer a:hover { color: var(--gold-light); }
+    .playlist-link { display: inline-block; padding: .6em 2em; border: 1px solid var(--border); color: var(--gold) !important; transition: background .2s, border-color .2s; }
+    .playlist-link:hover { background: rgba(201,168,76,.08) !important; border-color: var(--gold) !important; }
+    .footer-credit { margin-top: 1.8rem; font-family: 'Cinzel', serif; font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--text-muted); opacity: .35; }
+
+    /* MODAL */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.88); z-index: 9999; align-items: center; justify-content: center; padding: 1.5rem; backdrop-filter: blur(8px); }
+    .modal-overlay.active { display: flex; }
+    .modal-box { position: relative; max-width: 500px; width: 100%; animation: fadeUp .22s ease; }
+    .modal-box img { width: 100%; display: block; border: 1px solid var(--border); box-shadow: 0 0 80px rgba(201,168,76,.12); }
+    .modal-caption { font-family: 'Cinzel', serif; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); text-align: center; margin-top: .8rem; }
+    .modal-caption .modal-id { display: block; margin-bottom: .2rem; }
+    .modal-caption .modal-title { display: block; font-family: 'Crimson Pro', serif; font-size: 1rem; letter-spacing: 0; text-transform: none; color: var(--text); margin-bottom: .5rem; }
+    .modal-caption .modal-labels { display: block; font-family: 'Crimson Pro', serif; font-size: .8rem; letter-spacing: 0; text-transform: none; color: var(--text-muted); line-height: 1.7; }
+    .modal-close { position: absolute; top: -1rem; right: -1rem; width: 2rem; height: 2rem; background: var(--dark-3); border: 1px solid var(--border); color: var(--gold); font-size: .9rem; cursor: pointer; display: flex; align-items: center; justify-content: center; border-radius: 2px; transition: background .2s; }
+    .modal-close:hover { background: var(--dark); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-logos">
+
+      <!-- DT Logo + LNFA Stamp overlay -->
+      <div style="position:relative; display:inline-block; line-height:0;">
+        <img src="img/DTLOGO-WHITE.png" alt="Dream Theater" class="dt-logo">
+        <img src="img/lnfa-dt-stamp-png.png" alt="Lost Not Forgotten Archives stamp" class="lnfa-stamp">
+      </div>
+
+      <!-- SVG filter defs for stamp grain -->
+      <svg width="0" height="0" style="position:absolute">
+        <defs>
+          <filter id="stamp-grain" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" seed="8" result="noise"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+            <feComposite in="displaced" in2="SourceGraphic" operator="in"/>
+          </filter>
+        </defs>
+      </svg>
+
+    </div>
+    <div class="site-title">Lost Not Forgotten Archives</div>
+  </div>
+</header>
+
+<div id="app"></div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="imgModal" onclick="closeModal(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('imgModal').classList.remove('active')">✕</button>
+    <img id="modalImg" src="" alt="">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-label">Sources</div>
+  <div class="footer-sources">
+    <a href="https://dreamtheater.net/lnfa/" target="_blank">dreamtheater.net/lnfa</a>
+    <a href="https://dreamtheater.club/" target="_blank">dreamtheater.club</a>
+    <a href="https://www.discogs.com/artist/260935-Dream-Theater" target="_blank">Discogs</a>
+  </div>
+  <div class="footer-playlist">
+    <a href="https://open.spotify.com/playlist/4sibkBtkuuX7oIQ3G2zZIn?si=4794d1905f7949ff" target="_blank" class="playlist-link">▶ Lost Not Forgotten Archives Playlist</a>
+  </div>
+  <div class="footer-credit">Crafted with ♦ by Claude</div>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════════════════
+//  DATA
+// ═══════════════════════════════════════════════════════
+const reissues = [
+  {
+    title: "The Majesty Demos 1985–1986", category: "demo",
+    ytse: { id: "YTSEJAM-001", img: "img/YTSEJAM-001/Majesty_Demos_Dream_Theater_album_-_cover_art.webp",
+            labels: ["Ytsejam Records – YTSEJAM001 (US, 2003)"] },
+    lnfa: { id: "LNFA-006", img: "img/YTSEJAM-001/LNFA-006.jpg",
+            labels: ["Inside Out Music – IOMSECD 607 (EU, 2022)", "Sony Music – 19439945832 (EU, 2022)", "Sony Records Int'l – SICP-31513 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/4XFRfSN2dx5mKaZwMaTad0?utm_source=generator&theme=0"
+  },
+  {
+    title: "Los Angeles, California 5/18/98", category: "live",
+    ytse: { id: "YTSEJAM-002", img: "img/YTSEJAM-002/la98l.webp",
+            labels: ["Ytsejam Records – YTSEJAM002 (US, 2003)"] },
+    lnfa: null
+  },
+  {
+    title: "The Making of Scenes from a Memory", category: "studio",
+    ytse: { id: "YTSEJAM-003", img: "img/YTSEJAM-003/sfaml.webp",
+            labels: ["Ytsejam Records – YTSEJAM003 (US, 2003)"] },
+    lnfa: { id: "LNFA-021", img: "img/YTSEJAM-003/LNFA-021.jpg",
+            labels: ["Inside Out Music – IOM684 (EU, 2023)", "Sony Music – 19658827212 (EU, 2023)", "Sony Records Int'l – SICP-31638 (JP, 2023)"] },
+    spotify: "https://open.spotify.com/embed/album/6SXLoEbIPfnFGSt37VStue?utm_source=generator&theme=0"
+  },
+  {
+    title: "When Dream and Day Unite Demos 1987–1989", category: "demo",
+    ytse: { id: "YTSEJAM-004", img: "img/YTSEJAM-004/wdadu-lrg.webp",
+            labels: ["Ytsejam Records – YTSEJAM004 (US, 2004)"] },
+    lnfa: { id: "LNFA-020", img: "img/YTSEJAM-004/LNFA-020.jpg",
+            labels: ["Inside Out Music – IOM674 (EU, 2023)", "Sony Music – 19658795272 (EU, 2023)", "Sony Records Int'l – SICP-31604~5 (JP, 2023)"] },
+    spotify: "https://open.spotify.com/embed/album/0wh1M4uklCCvm57Mot63ll?utm_source=generator&theme=0"
+  },
+  {
+    title: "Tokyo, Japan 10/28/95", category: "live",
+    ytse: { id: "YTSEJAM-005", img: "img/YTSEJAM-005/tok-lrg.webp",
+            labels: ["Ytsejam Records – YTSEJAM005 (US, 2004)"] },
+    lnfa: null
+  },
+  {
+    title: "Master of Puppets", category: "cover",
+    ytse: { id: "YTSEJAM-006", img: "img/YTSEJAM-006/mop-lrg.webp",
+            labels: ["Ytsejam Records – YTSEJAM006 (US, 2004)"] },
+    lnfa: { id: "LNFA-004", img: "img/YTSEJAM-006/LNFA-004.jpg",
+            labels: ["Inside Out Music – IOMSECD 600 (EU, 2021)", "Sony Music – 19439907772 (EU, 2021)", "Sony Records Int'l – SICP-31476 (JP, 2021)"] },
+    spotify: "https://open.spotify.com/embed/album/5nbjp1UN0Z0GgE3rbRem1o?utm_source=generator&theme=0"
+  },
+  {
+    title: "Images and Words Demos 1989–1991", category: "demo",
+    ytse: { id: "YTSEJAM-007", img: "img/YTSEJAM-007/iwbig.webp",
+            labels: ["Ytsejam Records – YTSEJAM007 (US, 2005)"] },
+    lnfa: { id: "LNFA-013", img: "img/YTSEJAM-007/LNFA-013.jpg",
+            labels: ["Inside Out Music – IOM649 (EU, 2022)", "Sony Music – 19658728622 (EU, 2022)", "Sony Records Int'l – SICP-31548~9 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/1Vrh9xpIsVdijchDihsUV3?utm_source=generator&theme=0"
+  },
+  {
+    title: "The Number of the Beast", category: "cover",
+    ytse: { id: "YTSEJAM-008", img: "img/YTSEJAM-008/beastlg.webp",
+            labels: ["Ytsejam Records – YTSEJAM008 (US, 2005)"] },
+    lnfa: { id: "LNFA-011", img: "img/YTSEJAM-008/LNFA-011.jpg",
+            labels: ["Inside Out Music – IOM640 (EU, 2022)", "Sony Music – 19658709502 (EU, 2022)", "Sony Records Int'l – SICP-31537 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/4mwLdqpkW0YWZwUqD1k4yV?utm_source=generator&theme=0"
+  },
+  {
+    title: "When Dream and Day Reunite", category: "live",
+    ytse: { id: "YTSEJAM-009", img: "img/YTSEJAM-009/dreamlg.webp",
+            labels: ["Ytsejam Records – YTSEJAM009 (US, 2005)"] },
+    lnfa: { id: "LNFA-005", img: "img/YTSEJAM-009/LNFA-005.jpg",
+            labels: ["Inside Out Music – IOMSECD 605 (EU, 2021)", "Sony Music – 19439926402 (EU, 2021)", "Sony Records Int'l – SICP-31509 (JP, 2021)"] },
+    spotify: "https://open.spotify.com/embed/album/0bLsrKNbCEqvcH2s30u46h?utm_source=generator&theme=0"
+  },
+  {
+    title: "Awake Demos", category: "demo",
+    ytse: { id: "YTSEJAM-010", img: "img/YTSEJAM-010/awakelrg.webp",
+            labels: ["Ytsejam Records – YTSEJAM010 (US, 2006)"] },
+    lnfa: { id: "LNFA-007", img: "img/YTSEJAM-010/LNFA-007.jpg",
+            labels: ["Inside Out Music – IOMSECD 615 (EU, 2022)", "Sony Music – 19439983402 (EU, 2022)", "Sony Records Int'l – SICP-31517 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/4fgXwj3gPleU0NQeuYQJrK?utm_source=generator&theme=0"
+  },
+  {
+    title: "Old Bridge, New Jersey 12/14/96", category: "live",
+    ytse: { id: "YTSEJAM-011", img: "img/YTSEJAM-011/oblrg.webp",
+            labels: ["Ytsejam Records – YTSEJAM011 (US, 2006)"] },
+    lnfa: { id: "LNFA-008", img: "img/YTSEJAM-011/LNFA-008.jpg",
+            labels: ["Inside Out Music – IOM655 (EU, 2022)", "Sony Music – 19658743322 (EU, 2022)", "Sony Records Int'l – SICP-31565~6 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/3sL8Vr9EE1kyUzj1lcolWr?utm_source=generator&theme=0"
+  },
+  {
+    title: "Dark Side of the Moon", category: "cover",
+    ytse: { id: "YTSEJAM-012", img: "img/YTSEJAM-012/dsotmlrg.webp",
+            labels: ["Ytsejam Records – YTSEJAM012 (US, 2006)"] },
+    lnfa: null
+  },
+  {
+    title: "New York City 3/4/93", category: "live",
+    ytse: { id: "YTSEJAM-013", img: "img/YTSEJAM-013/nycl.webp",
+            labels: ["Ytsejam Records – YTSEJAM013 (US, 2007)"] },
+    lnfa: { id: "LNFA-015", img: "img/YTSEJAM-013/LNFA-015.jpg",
+            labels: ["Inside Out Music – IOMSECD 619 (EU, 2022)", "Sony Music – 19439989512 (EU, 2022)", "Sony Records Int'l – SICP-31522-3 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/02Y334D78pAitL6f5nxgxE?utm_source=generator&theme=0"
+  },
+  {
+    title: "Falling Into Infinity Demos", category: "demo",
+    ytse: { id: "YTSEJAM-014", img: "img/YTSEJAM-014/iwdl.webp",
+            labels: ["Ytsejam Records – YTSEJAM014 (US, 2007)"] },
+    lnfa: { id: "LNFA-010", img: "img/YTSEJAM-014/LNFA-010.jpg",
+            labels: ["Inside Out Music – IOM636 (EU, 2022)", "Sony Music – 19658705512 (EU, 2022)", "Sony Records Int'l – SICP-31527~8 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/2sGvPBY4W7KEJDmgb2eKhc?utm_source=generator&theme=0"
+  },
+  {
+    title: "Made in Japan", category: "live",
+    ytse: { id: "YTSEJAM-015", img: "img/YTSEJAM-015/midl.webp",
+            labels: ["Ytsejam Records – YTSEJAM015 (US, 2007)"] },
+    lnfa: { id: "LNFA-014", img: "img/YTSEJAM-015/LNFA-014.jpg",
+            labels: ["Inside Out Music – IOM650 (EU, 2022)", "Sony Music – 19658724532 (EU, 2022)", "Sony Records Int'l – SICP-31556 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/6Euf0WhtR2Y1oKMD6BqtWG?utm_source=generator&theme=0"
+  },
+  {
+    title: "The Making of Falling Into Infinity", category: "studio",
+    ytse: { id: "YTSEJAM-016", img: "img/YTSEJAM-016/mfii-lg.webp",
+            labels: ["Ytsejam Records – YTSEJAM016 (US, 2009)"] },
+    lnfa: { id: "LNFA-019", img: "img/YTSEJAM-016/LNFA-019.jpg",
+            labels: ["Inside Out Music – IOM668 (EU, 2023)", "Sony Music – 19658783302 (EU, 2023)", "Sony Records Int'l – SICP-31602 (JP, 2023)"] },
+    spotify: "https://open.spotify.com/embed/album/6PSF6V0b6eMbuBI8lBMahX?utm_source=generator&theme=0"
+  },
+  {
+    title: "Train of Thought Instrumental Demos 2003", category: "demo",
+    ytse: { id: "YTSEJAM-017", img: "img/YTSEJAM-017/toti-lg.webp",
+            labels: ["Ytsejam Records – YTSEJAM017 (US, 2009)"] },
+    lnfa: { id: "LNFA-003", img: "img/YTSEJAM-017/LNFA-003.jpg",
+            labels: ["Inside Out Music – IOMLTDCD 595 (EU, 2021)", "Sony Music – 19439888472 (EU, 2021)", "Sony Records Int'l – SICP-31474 (JP, 2021)"] },
+    spotify: "https://open.spotify.com/embed/album/2K6lH61luw30zLa0Wh8isc?utm_source=generator&theme=0"
+  },
+  {
+    title: "Uncovered 2003–2005", category: "cover",
+    ytse: { id: "YTSEJAM-018", img: "img/YTSEJAM-018/Uncovered-lg.webp",
+            labels: ["Ytsejam Records – YTSEJAM018 (US, 2009)"] },
+    lnfa: null
+  }
+];
+
+const newReleases = [
+  {
+    title: "Images and Words – Live in Japan 2017", category: "live",
+    lnfa: { id: "LNFA-001", img: "img/LNFA-001/LNFA-001.jpg",
+            labels: ["Inside Out Music – IOMLTDCD 590 (EU, 2021)", "Sony Music – 19439862982 (EU, 2021)", "Sony Records Int'l – SICP-31439 (JP, 2021)"] },
+    spotify: "https://open.spotify.com/embed/album/5vG3r0Cdc05CnJMO5VQe5B?utm_source=generator&theme=0"
+  },
+  {
+    title: "A Dramatic Tour of Events – Select Board Mixes", category: "live",
+    lnfa: { id: "LNFA-002", img: "img/LNFA-002/LNFA-002.jpg",
+            labels: ["Inside Out Music – IOMLTDCD 592 (EU, 2021)", "Sony Music – 19439881932 (EU, 2021)", "Sony Records Int'l – SICP-31443~4 (JP, 2021)"] },
+    spotify: "https://open.spotify.com/embed/album/1DQlnLP9i9XfOqRsxnTM9T?utm_source=generator&theme=0"
+  },
+  {
+    title: "…And Beyond – Live in Japan 2017", category: "live",
+    lnfa: { id: "LNFA-009", img: "img/LNFA-009/LNFA-009.jpg",
+            labels: ["Inside Out Music – IOMSECD 623 (EU, 2022)", "Sony Music – 19439994152 (EU, 2022)", "Sony Records Int'l – SICP-31524 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/3uIx4pdT3EB6ecuP8CbnJO?utm_source=generator&theme=0"
+  },
+  {
+    title: "Live in Berlin 2019", category: "live",
+    lnfa: { id: "LNFA-012", img: "img/LNFA-012/LNFA-012.jpg",
+            labels: ["Inside Out Music – IOM646 (EU, 2022)", "Sony Music – 19658719832 (EU, 2022)", "Sony Records Int'l – SICP-31542~3 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/74Wn2DIhVl6RlGHCAvrh21?utm_source=generator&theme=0"
+  },
+  {
+    title: "Live in Wacken", category: "live",
+    lnfa: { id: "LNFA-016", img: "img/LNFA-016/LNFA-016.jpg",
+            labels: ["Inside Out Music – IOM661 (EU, 2022)", "Sony Music – 19658756202 (EU, 2022)", "Sony Records Int'l – SICP-31577 (JP, 2022)"] },
+    spotify: "https://open.spotify.com/embed/album/55NleCFUH8QxQlpcE2dIyW?utm_source=generator&theme=0"
+  },
+  {
+    title: "Live at Madison Square Garden", category: "live",
+    lnfa: { id: "LNFA-017", img: "img/LNFA-017/LNFA-017.jpg",
+            labels: ["Inside Out Music – IOM664 (EU, 2023)", "Sony Music – 19658756282 (EU, 2023)", "Sony Records Int'l – SICP-31580 (JP, 2023)"] },
+    spotify: "https://open.spotify.com/embed/album/0EkG0h7OgydTtd330AKCyU?utm_source=generator&theme=0"
+  },
+  {
+    title: "Distance Over Time Demos", category: "demo",
+    lnfa: { id: "LNFA-018", img: "img/LNFA-018/LNFA-018.jpg",
+            labels: ["Inside Out Music – IOM666 (EU, 2023)", "Sony Music – 19658770672 (EU, 2023)", "Sony Records Int'l – SICP-31599 (JP, 2023)"] },
+    spotify: "https://open.spotify.com/embed/album/3813UgywzpXjMYQiWyb859?utm_source=generator&theme=0"
+  },
+  {
+    title: "Live in Tokyo 2010", category: "live",
+    lnfa: { id: "LNFA-022", img: "img/LNFA-022/LNFA-022.jpg",
+            labels: ["Inside Out Music – IOM766 (EU, 2026)", "Sony Music – 19958408822 (EU, 2026)", "Sony Records Int'l – SICP-31844 (JP, 2026)"] },
+    spotify: "https://open.spotify.com/embed/album/2rg2G2ES20fSBBrXquoEUI?utm_source=generator&theme=0"
+  }
+];
+
+// ═══════════════════════════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════════════════════════
+const catLabel = { demo:'Demo', live:'Live', studio:'Studio', cover:'Cover' };
+
+function badge(cat) {
+  return `<span class="badge ${cat}">${catLabel[cat]}</span>`;
+}
+
+function releaseItem(rel, title) {
+  const safeTitle  = title.replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+  const safeSrc    = rel.img.replace(/'/g,"\\'");
+  const safeLabels = rel.labels.join('||').replace(/'/g,"\\'");
+  return `
+    <div class="release-item">
+      <img src="${rel.img}" alt="${rel.id}" title="Klik untuk perbesar"
+           onclick="openModal('${safeSrc}','${rel.id}','${safeTitle}','${safeLabels}')">
+      <div class="release-label">${rel.id}</div>
+      <div class="release-sub">${rel.labels.map(l=>`<span>${l}</span>`).join('<br>')}</div>
+    </div>`;
+}
+
+function spotifyEmbed(url) {
+  return url
+    ? `<div class="spotify-wrap"><iframe src="${url}" allowfullscreen
+         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+         loading="lazy"></iframe></div>`
+    : '';
+}
+
+function card(data, showBoth) {
+  const right = showBoth
+    ? (data.lnfa ? releaseItem(data.lnfa, data.title) : `<div class="release-item"><div class="na-tag">No official reissue</div></div>`)
+    : '';
+  return `
+    <div class="card">
+      ${badge(data.category)}
+      <div class="card-title">${data.title}</div>
+      <div class="releases-row">
+        ${releaseItem(showBoth ? data.ytse : data.lnfa, data.title)}
+        ${right}
+      </div>
+      ${spotifyEmbed(data.spotify)}
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════════
+//  RENDER
+// ═══════════════════════════════════════════════════════
+document.getElementById('app').innerHTML = `
+  <div class="section-title"><span>Ytse Jam Records · Remixed, Remastered &amp; Reissued</span></div>
+  <div class="releases-grid">${reissues.map(r => card(r, true)).join('')}</div>
+  <div class="section-title"><span>Lost Not Forgotten Archives · Previously Unreleased</span></div>
+  <div class="releases-grid">${newReleases.map(r => card(r, false)).join('')}</div>
+`;
+
+// ═══════════════════════════════════════════════════════
+//  MODAL
+// ═══════════════════════════════════════════════════════
+function openModal(src, id, title, labelsStr) {
+  document.getElementById('modalImg').src = src;
+  const labels = labelsStr.split('||').map(l => `<span>${l}</span>`).join('<br>');
+  document.getElementById('modalCaption').innerHTML =
+    `<span class="modal-id">${id}</span>
+     <span class="modal-title">${title}</span>
+     <span class="modal-labels">${labels}</span>`;
+  document.getElementById('imgModal').classList.add('active');
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('imgModal'))
+    document.getElementById('imgModal').classList.remove('active');
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape')
+    document.getElementById('imgModal').classList.remove('active');
+});
+</script>
+</body>
 </html>
