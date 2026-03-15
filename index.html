@@ -389,7 +389,6 @@ function releaseItem(rel, title) {
       <img src="${rel.img}" alt="${rel.id}" title="Klik untuk perbesar"
            onclick="openModal('${safeSrc}','${rel.id}','${safeTitle}','${safeLabels}')">
       <div class="release-label">${rel.id}</div>
-      <div class="release-sub">${rel.labels.map(l=>`<span>${l}</span>`).join('<br>')}</div>
     </div>`;
 }
 
